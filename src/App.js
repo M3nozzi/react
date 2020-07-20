@@ -3,12 +3,12 @@ import React from "react";
 import "./styles.css";
 
 function App() {
-  async function handleAddRepository() {
-    // TODO
+  function handleAddRepository() {
+   
   }
 
   async function handleRemoveRepository(id) {
-    // TODO
+   
   }
 
   return (
