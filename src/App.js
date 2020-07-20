@@ -26,14 +26,24 @@ function App() {
   }
 
   async function handleRemoveRepository(id) {
-   
+    const repositoryIndex = repositories.findIndex(repository => repository.id === id);
+    
+    if (repositoryIndex >= 0) {
+      const newRepositories = [...repositories];
+
+      newRepositories.splice(repositoryIndex, 1);
+      
+      setRepositories(newRepositories)
+
+      await api.delete(`repositories/${id}`)
+    }
   }
 
   return (
     <div>
       <ul data-testid="repository-list">
        
-        {repositories.map(repository => <li key={repository.id}>{repository.title} <button onClick={() => handleRemoveRepository(1)}>Remover</button> </li>)}
+        {repositories.map(repository => <li key={repository.id}>{repository.title} <button onClick={() => handleRemoveRepository(repository.id)}>Remover</button> </li>)}
     
       </ul>
 
