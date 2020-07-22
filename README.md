@@ -16,11 +16,11 @@ Test: Jest JS
 
 ### Application features
 
-- **`List the repositories from API`** You should be able to create a list with the title field of all the repositories that are registered in your API.
+- **`List the repositories from API`** Should be able to create a list with the title field of all the repositories that are registered in the API.
 
-- **`Add a repository to API`** You should be able to add a new item to your API using a button with the text Add and, after creation, you should be able to display its name after registration.
+- **`Add a repository to API`** Should be able to add a new item to the API using a button with the text Add and, after creation, you should be able to display its name after registration.
 
-- **`Remove a repository from API`** For each item on your list, you must have a button with the text Remove which, when clicked, will call a function to remove that item from the list of your frontend and your API.
+- **`Remove a repository from API`** For each item on the list, must have a button with the text Remove which, when clicked, will call a function to remove that item from the list of the frontend and the API.
 
 
 
